@@ -1,0 +1,37 @@
+R1#
+R1#terminal width 511
+R1#terminal length 0
+R1#
+R1#
+R1#
+R1#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#
+R1(config)#configure terminal
+                   ^
+% Invalid input detected at '^' marker.
+
+R1(config)#ip access-list standard snmp-service
+R1(config-std-nacl)#  remark zabbix
+R1(config-std-nacl)#  permit 10.34.176.250
+R1(config-std-nacl)#  permit 10.34.176.251
+R1(config-std-nacl)#  permit 10.34.176.252
+R1(config-std-nacl)#
+R1(config-std-nacl)#snmp-server view ro_view iso included
+R1(config)#snmp-server view rw_view iso included
+R1(config)#
+R1(config)#snmp-server group ro_group v3 priv read ro_view access snmp-service
+R1(config)#snmp-server group rw_group v3 priv read rw_view access snmp-service
+R1(config)#
+R1(config)#snmp-server user zabbix-ro ro_group v3 auth sha P@ssw0rd priv aes 128 P@ssw0rd access snmp-service
+R1(config)#snmp-server user zabbix-rw rw_group v3 auth sha P@ssw0rd priv aes 128 P@ssw0rd access snmp-service
+R1(config)#
+R1(config)#
+R1(config)#end
+R1#
+R1#
+R1#wr
+Building configuration...
+[OK]
+R1#
+R1#exit

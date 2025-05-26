@@ -1,0 +1,174 @@
+anisa-bridge: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 50:50:50:50:50:50  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 2 overruns 0  carrier 0  collisions 0
+
+firewall1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 36:b0:b5:43:87:5b  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 2 overruns 0  carrier 0  collisions 0
+
+firewall2: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether b2:1b:00:f8:99:7a  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 2 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 199941  bytes 711109309 (711.1 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 199941  bytes 711109309 (711.1 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+local1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.16.1.1  netmask 255.255.255.0  broadcast 172.16.1.255
+        ether 00:00:00:00:00:01  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 98 overruns 0  carrier 0  collisions 0
+
+local2: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.16.2.1  netmask 255.255.255.0  broadcast 172.16.2.255
+        ether 00:00:00:00:00:02  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 97 overruns 0  carrier 0  collisions 0
+
+local3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.16.3.1  netmask 255.255.255.0  broadcast 172.16.3.255
+        ether 2a:e1:65:07:e2:88  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 98 overruns 0  carrier 0  collisions 0
+
+local6: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet6 fd::1:a:1  prefixlen 64  scopeid 0x0<global>
+        ether 00:00:00:00:00:06  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 23 overruns 0  carrier 0  collisions 0
+
+nat100: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.16.100.1  netmask 255.255.255.0  broadcast 172.16.100.255
+        ether 00:00:00:00:01:00  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 175 overruns 0  carrier 0  collisions 0
+
+usbeth: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 00:00:00:00:00:04  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 2 overruns 0  carrier 0  collisions 0
+
+v-local1-10: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 00:00:00:00:00:01  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+v-local1-20: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 00:00:00:00:00:01  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+virt-int1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 40.40.40.1  netmask 255.255.255.0  broadcast 40.40.40.255
+        ether 62:a4:15:6c:61:6d  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 97 overruns 0  carrier 0  collisions 0
+
+virt-int2: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 50.50.50.1  netmask 255.255.255.0  broadcast 50.50.50.255
+        ether da:41:87:25:0a:c9  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 98 overruns 0  carrier 0  collisions 0
+
+vl10: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.16.10.1  netmask 255.255.255.0  broadcast 172.16.10.255
+        ether 02:66:a3:3e:be:81  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 98 overruns 0  carrier 0  collisions 0
+
+vl20: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.16.20.1  netmask 255.255.255.0  broadcast 172.16.20.255
+        ether aa:80:06:9d:72:e5  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 98 overruns 0  carrier 0  collisions 0
+
+vl100: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 92:80:0b:69:52:f3  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 2 overruns 0  carrier 0  collisions 0
+
+vl200: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 32:7e:67:02:68:f1  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 2 overruns 0  carrier 0  collisions 0
+
+vlan500: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 3a:15:61:ec:22:f1  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 2 overruns 0  carrier 0  collisions 0
+
+vlan600: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 4a:3d:0a:eb:47:79  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 3 overruns 0  carrier 0  collisions 0
+
+vlan-500: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 50:50:50:50:50:50  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vlan-600: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 50:50:50:50:50:50  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp1s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.147.24  netmask 255.255.255.0  broadcast 192.168.147.255
+        inet6 fe80::c69d:edff:fe17:aa09  prefixlen 64  scopeid 0x20<link>
+        ether c4:9d:ed:17:aa:09  txqueuelen 1000  (Ethernet)
+        RX packets 1218918  bytes 833764010 (833.7 MB)
+        RX errors 0  dropped 126149  overruns 0  frame 0
+        TX packets 1092766  bytes 313943061 (313.9 MB)
+        TX errors 0  dropped 4 overruns 0  carrier 0  collisions 0
+
